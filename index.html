@@ -12,8 +12,31 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </head>
   <body>
+    <div class="absolute">
+      <ul class="absolute--menu__lists">
+        <li class="menu__list">
+          <a class="menu__list--link" href="#">Trending</a>
+        </li>
+        <li class="menu__list">
+          <a class="menu__list--link" href="#">Collection</a>
+        </li>
+
+        <li class="menu__list">
+          <a class="menu__list--link" href="#">Create</a>
+        </li>
+        <li class="menu__list">
+          <a class="menu__list--link button" href="#">Updates</a>
+        </li>
+      </ul>
+    </div>
     <header class="header">
       <nav class="navbar">
         <figure class="navbar__img-wrapper">
@@ -22,19 +45,16 @@
         <div class="menu">
           <ul class="menu__lists">
             <li class="menu__list">
-              <a class="menu__list--link" href="#">Marketplace</a>
+              <a class="menu__list--link" href="#">Trending</a>
             </li>
             <li class="menu__list">
               <a class="menu__list--link" href="#">Collection</a>
             </li>
             <li class="menu__list">
-              <a class="menu__list--link" href="#">Community</a>
-            </li>
-            <li class="menu__list">
               <a class="menu__list--link" href="#">Create</a>
             </li>
             <li class="menu__list">
-              <a class="menu__list--link btn" href="#">Connect Wallet</a>
+              <a class="menu__list--link" href="#">Update</a>
             </li>
           </ul>
         </div>
@@ -130,7 +150,7 @@
         <div class="background hero__section--card"></div>
         <div class="hero__section--card sixth-card">
           <div class="dragon1-container">
-            <img src="./images/dragon1.png" alt="" />
+            <img class="sixth--card-img" src="./images/dragon1.png" alt="" />
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
               obcaecati optio quae animi atque reiciendis.
@@ -154,6 +174,276 @@
     <section class="hero__section--fourth">
       <h1 class="hero__section--header">TrendingNFTs</h1>
       <div class="slide">
+        <div class="slide__card">
+          <img src="./images/dragon3.png" class="slide__card--img" alt="" />
+          <div class="slide__card--container">
+            <div class="slide__card--sub-container">
+              <img
+                class="slide__card--avatar"
+                src="./images/profile3.svg"
+                alt=""
+              />
+              <div class="profile__name--title">
+                <a href="#" class="profile__name">HAPE #8064</a>
+                <span class="profile__title">HAPE PRIME</span>
+              </div>
+            </div>
+            <a class="ethereum" href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="m12 1.75l-6.25 10.5L12 16l6.25-3.75L12 1.75M5.75 13.5L12 22.25l6.25-8.75L12 17.25L5.75 13.5Z"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="profile">
+            <div>
+              <h1 class="h1">15.8 ETH</h1>
+              <span class="span">Latest Bid</span>
+            </div>
+            <div>
+              <h1 class="h1">9.45 ETH</h1>
+              <span class="span">from</span>
+            </div>
+            <div>
+              <h1 class="h1">$180,345</h1>
+              <span class="span red">-5.45%</span>
+            </div>
+          </div>
+
+          <button class="collect__btn">Collect Now</button>
+        </div>
+        <div class="slide__card">
+          <img src="./images/dragon3.png" class="slide__card--img" alt="" />
+          <div class="slide__card--container">
+            <div class="slide__card--sub-container">
+              <img
+                class="slide__card--avatar"
+                src="./images/profile3.svg"
+                alt=""
+              />
+              <div class="profile__name--title">
+                <a href="#" class="profile__name">HAPE #8064</a>
+                <span class="profile__title">HAPE PRIME</span>
+              </div>
+            </div>
+            <a class="ethereum" href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="m12 1.75l-6.25 10.5L12 16l6.25-3.75L12 1.75M5.75 13.5L12 22.25l6.25-8.75L12 17.25L5.75 13.5Z"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="profile">
+            <div>
+              <h1 class="h1">15.8 ETH</h1>
+              <span class="span">Latest Bid</span>
+            </div>
+            <div>
+              <h1 class="h1">9.45 ETH</h1>
+              <span class="span">from</span>
+            </div>
+            <div>
+              <h1 class="h1">$180,345</h1>
+              <span class="span red">-5.45%</span>
+            </div>
+          </div>
+
+          <button class="collect__btn">Collect Now</button>
+        </div>
+        <div class="slide__card">
+          <img src="./images/dragon3.png" class="slide__card--img" alt="" />
+          <div class="slide__card--container">
+            <div class="slide__card--sub-container">
+              <img
+                class="slide__card--avatar"
+                src="./images/profile3.svg"
+                alt=""
+              />
+              <div class="profile__name--title">
+                <a href="#" class="profile__name">HAPE #8064</a>
+                <span class="profile__title">HAPE PRIME</span>
+              </div>
+            </div>
+            <a class="ethereum" href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="m12 1.75l-6.25 10.5L12 16l6.25-3.75L12 1.75M5.75 13.5L12 22.25l6.25-8.75L12 17.25L5.75 13.5Z"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="profile">
+            <div>
+              <h1 class="h1">15.8 ETH</h1>
+              <span class="span">Latest Bid</span>
+            </div>
+            <div>
+              <h1 class="h1">9.45 ETH</h1>
+              <span class="span">from</span>
+            </div>
+            <div>
+              <h1 class="h1">$180,345</h1>
+              <span class="span red">-5.45%</span>
+            </div>
+          </div>
+
+          <button class="collect__btn">Collect Now</button>
+        </div>
+        <div class="slide__card">
+          <img src="./images/dragon3.png" class="slide__card--img" alt="" />
+          <div class="slide__card--container">
+            <div class="slide__card--sub-container">
+              <img
+                class="slide__card--avatar"
+                src="./images/profile3.svg"
+                alt=""
+              />
+              <div class="profile__name--title">
+                <a href="#" class="profile__name">HAPE #8064</a>
+                <span class="profile__title">HAPE PRIME</span>
+              </div>
+            </div>
+            <a class="ethereum" href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="m12 1.75l-6.25 10.5L12 16l6.25-3.75L12 1.75M5.75 13.5L12 22.25l6.25-8.75L12 17.25L5.75 13.5Z"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="profile">
+            <div>
+              <h1 class="h1">15.8 ETH</h1>
+              <span class="span">Latest Bid</span>
+            </div>
+            <div>
+              <h1 class="h1">9.45 ETH</h1>
+              <span class="span">from</span>
+            </div>
+            <div>
+              <h1 class="h1">$180,345</h1>
+              <span class="span red">-5.45%</span>
+            </div>
+          </div>
+
+          <button class="collect__btn">Collect Now</button>
+        </div>
+        <div class="slide__card">
+          <img src="./images/dragon3.png" class="slide__card--img" alt="" />
+          <div class="slide__card--container">
+            <div class="slide__card--sub-container">
+              <img
+                class="slide__card--avatar"
+                src="./images/profile3.svg"
+                alt=""
+              />
+              <div class="profile__name--title">
+                <a href="#" class="profile__name">HAPE #8064</a>
+                <span class="profile__title">HAPE PRIME</span>
+              </div>
+            </div>
+            <a class="ethereum" href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="m12 1.75l-6.25 10.5L12 16l6.25-3.75L12 1.75M5.75 13.5L12 22.25l6.25-8.75L12 17.25L5.75 13.5Z"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="profile">
+            <div>
+              <h1 class="h1">15.8 ETH</h1>
+              <span class="span">Latest Bid</span>
+            </div>
+            <div>
+              <h1 class="h1">9.45 ETH</h1>
+              <span class="span">from</span>
+            </div>
+            <div>
+              <h1 class="h1">$180,345</h1>
+              <span class="span red">-5.45%</span>
+            </div>
+          </div>
+
+          <button class="collect__btn">Collect Now</button>
+        </div>
+        <div class="slide__card">
+          <img src="./images/dragon3.png" class="slide__card--img" alt="" />
+          <div class="slide__card--container">
+            <div class="slide__card--sub-container">
+              <img
+                class="slide__card--avatar"
+                src="./images/profile3.svg"
+                alt=""
+              />
+              <div class="profile__name--title">
+                <a href="#" class="profile__name">HAPE #8064</a>
+                <span class="profile__title">HAPE PRIME</span>
+              </div>
+            </div>
+            <a class="ethereum" href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="m12 1.75l-6.25 10.5L12 16l6.25-3.75L12 1.75M5.75 13.5L12 22.25l6.25-8.75L12 17.25L5.75 13.5Z"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="profile">
+            <div>
+              <h1 class="h1">15.8 ETH</h1>
+              <span class="span">Latest Bid</span>
+            </div>
+            <div>
+              <h1 class="h1">9.45 ETH</h1>
+              <span class="span">from</span>
+            </div>
+            <div>
+              <h1 class="h1">$180,345</h1>
+              <span class="span red">-5.45%</span>
+            </div>
+          </div>
+
+          <button class="collect__btn">Collect Now</button>
+        </div>
         <div class="slide__card">
           <img src="./images/dragon3.png" class="slide__card--img" alt="" />
           <div class="slide__card--container">
@@ -599,15 +889,81 @@
     </section>
     <img src="./images/line2.svg" class="linebackground line2" alt="" />
 
-    <article class="articles__second">
-      <h1 class="hero__section--header">Articles</h1>
-      <div class="articles__card">
-        <img src="articles__img" alt="" />
-        <div>
-          <h1>We've lowered marketplace fees on all your favorite NFTs</h1>
-          <span>January 23, 2023</span>
+    <footer>
+      <div class="footer__upper">
+        <h1 class="footer__updates">Get More Updates</h1>
+        <p class="footer__paragraph">
+          Join our mailing list to stay in the loop with our newest feature
+          releases, NFT drops, and tips and tricks
+        </p>
+        <form action="" class="form">
+          <input
+            type="text"
+            placeholder="Enter your email"
+            class="form__input"
+          />
+        </form>
+      </div>
+      <div class="footer__lower">
+        <div class="footer__lower-sub">
+          <img src="./images/logo.svg" alt="" class="logo" />
+          <p class="footer__lower--paragraph">
+            The Leading NFT Marketplace On Ethereum Home To The Next Generation
+            Of Digital Creators. Discover The Best NFT Collections.
+          </p>
+          <div class="social__media">
+            <a href="">
+              <img
+                class="social__icon discord"
+                src="./images/socials/discord.svg"
+                alt=""
+              />
+            </a>
+            <a href="">
+              <img
+                class="social__icon twitter"
+                src="./images/socials/twitter.svg"
+                alt=""
+              />
+            </a>
+            <a href="">
+              <img
+                class="social__icon facebook"
+                src="./images/socials/facebook.svg"
+                alt=""
+              />
+            </a>
+            <a href="">
+              <img
+                class="social__icon youtube"
+                src="./images/socials/youtube.svg"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+        <div class="footer__marketplace-container">
+          <h1>Marketplace</h1>
+          <div class="footer__marketplace">
+            <a href="#">Explore</a>
+            <a href="#">Articles</a>
+            <a href="#">How It Works</a>
+            <a href="#">Help</a>
+          </div>
+        </div>
+        <div class="footer__links-container">
+          <h1>Links</h1>
+          <div class="footer__links">
+            <a href="#">Tokens</a>
+            <a href="#">API</a>
+            <a href="#">Big Bounty</a>
+            <a href="#">Become Partners</a>
+          </div>
         </div>
       </div>
-    </article>
+      <div class="copyright">
+        <span>&copy; 2023 Serendipity. All Right Reserved</span>
+      </div>
+    </footer>
   </body>
 </html>
