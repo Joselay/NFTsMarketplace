@@ -212,3 +212,4 @@ lists.addEventListener('click', function (e) {
 
     document.querySelector(e.target.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
 });
+

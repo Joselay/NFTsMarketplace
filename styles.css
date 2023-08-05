@@ -877,3 +877,29 @@ form {
   color: rgba(255, 255, 255, 0.5);
   transition: all 0.3s ease;
 }
+
+@media only screen and (max-width: 576px) {
+  .hero__section--second {
+    left: -10rem;
+  }
+  .collections__card {
+    width: 90%;
+    height: 100%;
+  }
+  .collections__cards {
+    grid-row-gap: 3rem;
+    grid-column-gap: 0;
+    place-items: center;
+  }
+  .footer__lower {
+    flex-direction: column;
+    gap: 5rem;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  /* Styles for medium devices (small laptops) */
+  .hero__section--second {
+    left: 15rem;
+  }
+}
