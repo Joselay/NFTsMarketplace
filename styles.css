@@ -612,9 +612,7 @@ main {
   font-weight: 500;
   transition: all 0.3s ease;
 }
-.collections__button:hover {
-  background: rgba(77, 73, 73, 0.5);
-}
+
 .collections__buttons {
   display: flex;
   align-items: center;
