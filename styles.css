@@ -111,13 +111,14 @@ main {
   background: #111368;
   filter: blur(50px);
   border-radius: 50%;
+  opacity: 0.7;
   width: 52rem;
   height: 52rem;
   position: absolute;
   top: -7rem;
   left: -1rem;
-  z-index: -2;
-  animation: circleAnimate 7s ease-in-out infinite alternate;
+  z-index: -5;
+  animation: circleAnimate 5s ease-in-out infinite alternate;
 }
 @keyframes circleAnimate {
   0% {
@@ -336,7 +337,7 @@ main {
   left: 40rem;
   filter: blur(50px);
   border-radius: 50%;
-  z-index: -100;
+  z-index: -20;
   box-shadow: 0rem 0.5rem 5rem 5rem #6741d999;
   animation: circleAnimate 5s linear infinite;
 }
@@ -383,7 +384,7 @@ main {
   scale: 1.5;
   position: absolute;
   top: 20rem;
-  z-index: -1;
+  z-index: -5;
   overflow: hidden;
 }
 .linebackground {
@@ -848,7 +849,7 @@ form {
   z-index: 100;
 }
 .absolute {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

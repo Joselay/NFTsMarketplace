@@ -208,5 +208,7 @@ const lists = document.querySelector('.absolute--menu__lists');
 lists.addEventListener('click', function (e) {
     e.preventDefault();
     if (e.target.classList.contains('absolute--menu__lists')) return;
-    console.log(e.target)
+    document.querySelector('.absolute').classList.remove('display');
+
+    document.querySelector(e.target.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
 });
