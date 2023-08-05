@@ -204,8 +204,17 @@ hamburger.addEventListener('click', function () {
     document.querySelector('.absolute').classList.toggle('display')
 });
 
-const lists = document.querySelector('.absolute--menu__lists');
-lists.addEventListener('click', function (e) {
+// const lists = document.querySelector('.absolute--menu__lists');
+// lists.addEventListener('click', function (e) {
+//     e.preventDefault();
+//     if (e.target.classList.contains('absolute--menu__lists')) return;
+//     document.querySelector('.absolute').classList.remove('display');
+
+//     document.querySelector(e.target.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+// });
+
+const absoluteLists = document.querySelector('.absolute--menu__lists');
+absoluteLists.addEventListener('click', function (e) {
     e.preventDefault();
     if (e.target.classList.contains('absolute--menu__lists')) return;
     document.querySelector('.absolute').classList.remove('display');
@@ -213,3 +222,11 @@ lists.addEventListener('click', function (e) {
     document.querySelector(e.target.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
 });
 
+const lists = document.querySelector('.menu__lists');
+lists.addEventListener('click', function (e) {
+    e.preventDefault();
+    if (e.target.classList.contains('menu__lists')) return;
+    document.querySelector('.absolute').classList.remove('display');
+
+    document.querySelector(e.target.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+});
